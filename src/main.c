@@ -17,8 +17,8 @@ SDL_AppResult SDL_AppInit(void **appstate, int argc, char *argv[])
         return SDL_APP_FAILURE;
     }
 
-    if (!SDL_CreateWindowAndRenderer("Play audio by click in C and SDL3",
-            300, 300, 0, &window, &renderer)) //
+    const char *title = "Play audio by click in C and SDL3";
+    if (!SDL_CreateWindowAndRenderer(title, 350, 350, 0, &window, &renderer))
     {
         SDL_Log("Couldn't create window/renderer: %s", SDL_GetError());
         return SDL_APP_FAILURE;
@@ -45,7 +45,7 @@ SDL_AppResult SDL_AppInit(void **appstate, int argc, char *argv[])
         return SDL_APP_FAILURE;
     }
 
-    return SDL_APP_CONTINUE; // Carry on with the program
+    return SDL_APP_CONTINUE;
 }
 
 // This function runs when a new event (mouse input, keypresses, etc) occurs
@@ -60,7 +60,7 @@ SDL_AppResult SDL_AppEvent(void *appstate, SDL_Event *event)
         // Play the sound effect
         Mix_PlayChannel(-1, g_wave, 0);
     }
-    return SDL_APP_CONTINUE; // Carry on with the program
+    return SDL_APP_CONTINUE;
 }
 
 // This function runs once per frame, and is the heart of the program
@@ -72,17 +72,29 @@ SDL_AppResult SDL_AppIterate(void *appstate)
 
     // Update the screen
     SDL_RenderPresent(renderer);
-    return SDL_APP_CONTINUE; // Carry on with the program
+    return SDL_APP_CONTINUE;
 }
 
 // This function runs once at shutdown
 void SDL_AppQuit(void *appstate, SDL_AppResult result)
 {
-    // SDL will clean up the window/renderer for us
+    if (renderer)
+    {
+        SDL_DestroyRenderer(renderer);
+        renderer = NULL;
+    }
+
+    if (window)
+    {
+        SDL_DestroyWindow(window);
+        window = NULL;
+    }
+
     if (g_wave)
     {
         Mix_FreeChunk(g_wave);
         g_wave = NULL;
     }
+
     SDL_Quit();
 }
