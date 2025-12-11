@@ -2,7 +2,7 @@
 
 **Demo in the browser:** https://play-audio-sdl-3-2-28-c.netlify.app/
 
-**EXE for Windows 10, 64-bit:** [play-audio-sdl3-c-exe.zip](https://www.dropbox.com/scl/fi/0qtdgo6zs478r7532ukxm/play-audio-sdl-3-2-28-c-exe.zip?rlkey=v62lx7qiuhsad68ripdgvqs6n&st=s2jm6upj&raw=1)
+**EXE for Windows 10, 64-bit:** [play-audio-sdl-3.2.28-c-exe.zip](https://www.dropbox.com/scl/fi/0qtdgo6zs478r7532ukxm/play-audio-sdl-3-2-28-c-exe.zip?rlkey=v62lx7qiuhsad68ripdgvqs6n&st=s2jm6upj&raw=1)
 - Zip size: 1.99 MB
 - Unzipped: 4.45 MB
 
