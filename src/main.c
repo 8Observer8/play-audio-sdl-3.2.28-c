@@ -24,6 +24,23 @@ SDL_AppResult SDL_AppInit(void **appstate, int argc, char *argv[])
         return SDL_APP_FAILURE;
     }
 
+    // --- Print SDL versions ---
+    SDL_Log("Compiled SDL3 version: %d.%d.%d",
+        SDL_MAJOR_VERSION,
+        SDL_MINOR_VERSION,
+        SDL_MICRO_VERSION);
+    // Get the version of the SDL library linked at runtime
+    int v = SDL_GetVersion();
+    SDL_Log("Linked SDL3 version:   %d.%d.%d", SDL_VERSIONNUM_MAJOR(v),
+        SDL_VERSIONNUM_MINOR(v), SDL_VERSIONNUM_MICRO(v));
+
+    // --- SDL3_mixer version ---
+    v = Mix_Version();
+    int major = SDL_VERSIONNUM_MAJOR(v);
+    int minor = SDL_VERSIONNUM_MINOR(v);
+    int micro = SDL_VERSIONNUM_MICRO(v);
+    SDL_Log("SDL3_mixer version:    %d.%d.%d", major, minor, micro);
+
     SDL_AudioSpec spec;
     spec.freq = MIX_DEFAULT_FREQUENCY;
     spec.format = MIX_DEFAULT_FORMAT;
