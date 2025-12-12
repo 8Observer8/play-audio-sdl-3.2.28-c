@@ -1,6 +1,6 @@
 # Play Audio SDL3 (C)
 
-**Demo in the browser:** https://play-audio-sdl-3-2-28-c.netlify.app/
+**Demo in the browser:** https://8observer8.github.io/examples/sdl3/play-audio-sdl-3.2.28-c/
 
 **EXE for Windows 10, 64-bit:** [play-audio-sdl-3.2.28-c-exe.zip](https://www.dropbox.com/scl/fi/0qtdgo6zs478r7532ukxm/play-audio-sdl-3-2-28-c-exe.zip?rlkey=v62lx7qiuhsad68ripdgvqs6n&st=s2jm6upj&raw=1)
 - Zip size: 1.99 MB
