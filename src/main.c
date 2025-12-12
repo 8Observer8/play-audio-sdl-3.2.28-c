@@ -2,6 +2,7 @@
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
 #include <SDL3_mixer/SDL_mixer.h>
+#include <stdio.h>
 
 // We will use this renderer to draw into this window every frame
 static SDL_Window *window = NULL;
@@ -25,13 +26,13 @@ SDL_AppResult SDL_AppInit(void **appstate, int argc, char *argv[])
     }
 
     // --- Print SDL versions ---
-    SDL_Log("Compiled SDL3 version: %d.%d.%d",
+    printf("Compiled SDL3 version: %d.%d.%d\n",
         SDL_MAJOR_VERSION,
         SDL_MINOR_VERSION,
         SDL_MICRO_VERSION);
     // Get the version of the SDL library linked at runtime
     int v = SDL_GetVersion();
-    SDL_Log("Linked SDL3 version:   %d.%d.%d", SDL_VERSIONNUM_MAJOR(v),
+    printf("Linked SDL3 version:   %d.%d.%d\n", SDL_VERSIONNUM_MAJOR(v),
         SDL_VERSIONNUM_MINOR(v), SDL_VERSIONNUM_MICRO(v));
 
     // --- SDL3_mixer version ---
@@ -39,7 +40,7 @@ SDL_AppResult SDL_AppInit(void **appstate, int argc, char *argv[])
     int major = SDL_VERSIONNUM_MAJOR(v);
     int minor = SDL_VERSIONNUM_MINOR(v);
     int micro = SDL_VERSIONNUM_MICRO(v);
-    SDL_Log("SDL3_mixer version:    %d.%d.%d", major, minor, micro);
+    printf("SDL3_mixer version:    %d.%d.%d\n", major, minor, micro);
 
     SDL_AudioSpec spec;
     spec.freq = MIX_DEFAULT_FREQUENCY;
