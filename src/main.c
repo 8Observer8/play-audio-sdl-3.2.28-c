@@ -25,6 +25,8 @@ SDL_AppResult SDL_AppInit(void **appstate, int argc, char *argv[])
         return SDL_APP_FAILURE;
     }
 
+    SDL_SetRenderVSync(renderer, 1);
+
     // --- Print SDL versions ---
     printf("Compiled SDL3 version: %d.%d.%d\n",
         SDL_MAJOR_VERSION,
