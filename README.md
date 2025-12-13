@@ -1,5 +1,5 @@
 **Newer version (uses pre-release SDL 3.3.4):**
-https://github.com/8Observer8/play-audio-sdl3-3.3.4-c
+https://github.com/8Observer8/play-audio-sdl-3.3.4-c
 
 # Play Audio SDL3 (C)
 
