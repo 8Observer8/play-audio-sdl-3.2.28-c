@@ -29,19 +29,19 @@
 
 ## Tools to Build the EXE
 
-- [MinGW GCC 11.2](https://github.com/brechtsanders/winlibs_mingw/releases/download/11.2.0-14.0.0-9.0.0-ucrt-r7/winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r7.zip)
-- [SDL3-3.2.28-win32-x64.zip](https://www.dropbox.com/scl/fi/f43wal3dw54e8erw56prj/SDL3-3.2.28-win32-x64.zip?rlkey=s973q3ci0lvwvt4yrg6nklu38&st=hwoanaix&raw=1)
-- [SDL3-devel-3.2.28-mingw.zip](https://www.dropbox.com/scl/fi/z9sfnlbyph1h3rv83acy0/SDL3-devel-3.2.28-mingw.zip?rlkey=58noqvn8xhu1ypjetv9984fn8&st=5cdlvayf&raw=1)
-- [SDL3_mixer-3.0.0-win32-x64.zip](https://www.dropbox.com/scl/fi/nwf39yszg03aws8lo4au4/SDL3_mixer-3.0.0-win32-x64.zip?rlkey=77t92h7jjlmr6ql2cxaaw6dxd&st=12fb4kli&raw=1)
-- [SDL3_mixer-devel-3.0.0-mingw.zip](https://www.dropbox.com/scl/fi/n0vtphup4qfxl59poyz10/SDL3_mixer-devel-3.0.0-mingw.zip?rlkey=zuuan7wj50y5evx7pw7oyeezg&st=57vaeoa5&raw=1)
+- [MinGW GCC 11.2](https://github.com/brechtsanders/winlibs_mingw/releases/download/11.2.0-14.0.0-9.0.0-ucrt-r7/winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64ucrt-9.0.0-r7.zip) (zip - 178 MB, unzipped - 671 MB)
+- [SDL3-3.2.28-win32-x64.zip](https://www.dropbox.com/scl/fi/f43wal3dw54e8erw56prj/SDL3-3.2.28-win32-x64.zip?rlkey=s973q3ci0lvwvt4yrg6nklu38&st=hwoanaix&raw=1) (zip - 0.98 MB, unzipped - 2.4 MB)
+- [SDL3-devel-3.2.28-mingw.zip](https://www.dropbox.com/scl/fi/z9sfnlbyph1h3rv83acy0/SDL3-devel-3.2.28-mingw.zip?rlkey=58noqvn8xhu1ypjetv9984fn8&st=5cdlvayf&raw=1) (zip - 2.35 MB, unzipped - 8.55 MB)
+- [SDL3_mixer-3.0.0-win32-x64.zip](https://www.dropbox.com/scl/fi/nwf39yszg03aws8lo4au4/SDL3_mixer-3.0.0-win32-x64.zip?rlkey=77t92h7jjlmr6ql2cxaaw6dxd&st=12fb4kli&raw=1) (zip - 668 KB, unzipped - 1.57 MB)
+- [SDL3_mixer-devel-3.0.0-mingw.zip](https://www.dropbox.com/scl/fi/n0vtphup4qfxl59poyz10/SDL3_mixer-devel-3.0.0-mingw.zip?rlkey=zuuan7wj50y5evx7pw7oyeezg&st=57vaeoa5&raw=1) (zip - 712 KB, unzipped - 1.75 MB)
 
 ---
 
 ## Tools to Build WebAssembly
 
-- [Emscripten 4.0.15](https://emscripten.org/docs/getting_started/downloads.html)
-- [SDL3-devel-3.2.28-wasm.zip](https://www.dropbox.com/scl/fi/qhy3ngt1iwf3hbohu0ktw/SDL3-devel-3.2.28-wasm.zip?rlkey=rel1nm8o1i8qouqu4ld0au0xp&st=bongrnvb&raw=1)
-- [SDL3_mixer-devel-3.0.0-wasm.zip](https://www.dropbox.com/scl/fi/xlrsbemomhe8u28ks2qft/SDL3_mixer-devel-3.0.0-wasm.zip?rlkey=t01glwcrublchsazzmlmxwgxn&st=6pjfo9xr&raw=1)
+- [Emscripten 4.0.15](https://emscripten.org/docs/getting_started/downloads.html) (1.82 GB)
+- [SDL3-devel-3.2.28-wasm.zip](https://www.dropbox.com/scl/fi/qhy3ngt1iwf3hbohu0ktw/SDL3-devel-3.2.28-wasm.zip?rlkey=rel1nm8o1i8qouqu4ld0au0xp&st=bongrnvb&raw=1) (zip - 1.16 MB, unzipped - 5 MB)
+- [SDL3_mixer-devel-3.0.0-wasm.zip](https://www.dropbox.com/scl/fi/xlrsbemomhe8u28ks2qft/SDL3_mixer-devel-3.0.0-wasm.zip?rlkey=t01glwcrublchsazzmlmxwgxn&st=6pjfo9xr&raw=1) (zip - 567 KB, unzipped - 1.14 MB)
 
 ---
 
